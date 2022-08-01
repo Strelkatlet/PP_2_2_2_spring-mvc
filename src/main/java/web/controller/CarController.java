@@ -18,8 +18,8 @@ public class CarController {
     }
 
     @GetMapping("/cars")
-    public String allCars(@RequestParam(defaultValue = "5") Integer count, Model model) {
-        model.addAttribute("cars", carService.getCar(count));
+    public String showSomeCars(@RequestParam(defaultValue = "5") Integer count, Model model) {
+        model.addAttribute("cars", carService.showSomeCars(count));
         return "cars";
     }
 }

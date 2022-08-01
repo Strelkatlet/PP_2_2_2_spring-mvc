@@ -8,7 +8,7 @@ import web.model.Car;
 import java.util.List;
 
 @Service
-public class CarServiceImpl implements CarService{
+public class CarServiceImpl implements CarService {
     private final CarDAO CAR_DAO;
 
     @Autowired
@@ -17,7 +17,7 @@ public class CarServiceImpl implements CarService{
     }
 
     @Override
-    public List<Car> getCar(Integer count) {
-        return CAR_DAO.getCar(count);
+    public List<Car> showSomeCars(Integer count) {
+        return CAR_DAO.showSomeCars(count);
     }
 }
