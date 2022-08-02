@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Car {
     private int id;
     private String model;
-    private  int series;
+    private int series;
 
     public Car() {
     }
